@@ -13,6 +13,10 @@
 		2384F3F91B8B4E5700EE18AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2384F3F81B8B4E5700EE18AC /* Images.xcassets */; };
 		2384F3FC1B8B4E5700EE18AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2384F3FA1B8B4E5700EE18AC /* LaunchScreen.xib */; };
 		2384F4081B8B4E5700EE18AC /* SQLiteiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384F4071B8B4E5700EE18AC /* SQLiteiOSTests.swift */; };
+		2384F4121B8B4FA800EE18AC /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 2384F4111B8B4FA800EE18AC /* data.db */; };
+		2384F4161B8B4FB800EE18AC /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384F4141B8B4FB800EE18AC /* SQLiteDB.swift */; };
+		2384F4171B8B4FB800EE18AC /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384F4151B8B4FB800EE18AC /* String-Extras.swift */; };
+		2384F4191B8B4FD200EE18AC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2384F4181B8B4FD200EE18AC /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,11 @@
 		2384F4011B8B4E5700EE18AC /* SQLiteiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2384F4061B8B4E5700EE18AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2384F4071B8B4E5700EE18AC /* SQLiteiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteiOSTests.swift; sourceTree = "<group>"; };
+		2384F4111B8B4FA800EE18AC /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
+		2384F4131B8B4FB800EE18AC /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		2384F4141B8B4FB800EE18AC /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		2384F4151B8B4FB800EE18AC /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		2384F4181B8B4FD200EE18AC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2384F4191B8B4FD200EE18AC /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,8 @@
 		2384F3E31B8B4E5700EE18AC = {
 			isa = PBXGroup;
 			children = (
+				2384F4181B8B4FD200EE18AC /* libsqlite3.0.dylib */,
+				2384F4111B8B4FA800EE18AC /* data.db */,
 				2384F3EE1B8B4E5700EE18AC /* SQLiteiOS */,
 				2384F4041B8B4E5700EE18AC /* SQLiteiOSTests */,
 				2384F3ED1B8B4E5700EE18AC /* Products */,
@@ -77,6 +89,9 @@
 		2384F3EE1B8B4E5700EE18AC /* SQLiteiOS */ = {
 			isa = PBXGroup;
 			children = (
+				2384F4131B8B4FB800EE18AC /* Bridging-Header.h */,
+				2384F4141B8B4FB800EE18AC /* SQLiteDB.swift */,
+				2384F4151B8B4FB800EE18AC /* String-Extras.swift */,
 				2384F3F11B8B4E5700EE18AC /* AppDelegate.swift */,
 				2384F3F31B8B4E5700EE18AC /* ViewController.swift */,
 				2384F3F51B8B4E5700EE18AC /* Main.storyboard */,
@@ -193,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2384F3F71B8B4E5700EE18AC /* Main.storyboard in Resources */,
+				2384F4121B8B4FA800EE18AC /* data.db in Resources */,
 				2384F3FC1B8B4E5700EE18AC /* LaunchScreen.xib in Resources */,
 				2384F3F91B8B4E5700EE18AC /* Images.xcassets in Resources */,
 			);
@@ -212,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2384F4161B8B4FB800EE18AC /* SQLiteDB.swift in Sources */,
+				2384F4171B8B4FB800EE18AC /* String-Extras.swift in Sources */,
 				2384F3F41B8B4E5700EE18AC /* ViewController.swift in Sources */,
 				2384F3F21B8B4E5700EE18AC /* AppDelegate.swift in Sources */,
 			);
@@ -345,6 +363,7 @@
 				INFOPLIST_FILE = SQLiteiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/md231/Desktop/SQLiteiOS/SQLiteiOS/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -355,6 +374,7 @@
 				INFOPLIST_FILE = SQLiteiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/md231/Desktop/SQLiteiOS/SQLiteiOS/Bridging-Header.h";
 			};
 			name = Release;
 		};
